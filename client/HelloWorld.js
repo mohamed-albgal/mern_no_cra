@@ -2,7 +2,7 @@ import React from 'react'
 import { hot } from 'react-hot-loader'
 
 
-const HelloWorld = () => {
+export default  () => {
 	return (
 		<div>
 			<h1>Bismillah</h1>

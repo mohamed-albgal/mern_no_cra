@@ -3,7 +3,7 @@ const webpack = require('webpack')
 const CURRENT_WORKING_DIR = process.cwd()
 
 const config = {
-	name; "browser",
+	name: "browser",
 	mode: "development",
 	devtool: 'eval-source-map',
 	entry: [
@@ -17,7 +17,7 @@ const config = {
 		publicPath: '/dist/'
 
 	},
-	module{
+	module: {
 		rules: [
 			{
 				test: /\.jsx?$/,
@@ -27,10 +27,10 @@ const config = {
 		]
 	},
 
-	plugins: [
-		new webpack.HotModuleReplacementPlugin(),
-		new webpack.NoEmitOnErrorPlugin()
-	],
+    plugins: [
+          new webpack.HotModuleReplacementPlugin(),
+          new webpack.NoEmitOnErrorsPlugin()
+    ],
 	resolve: {
 		alias: {
 			'react-dom' : '@hot-loader/react-dom'

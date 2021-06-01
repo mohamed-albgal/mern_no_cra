@@ -4,18 +4,18 @@ const CURRENT_WORKING_DIR = process.cwd()
 const nodeExternals = require('webpack-node-externals')
 
 const config = {
-	name; "server",
+	name: "server",
 	entry: [ path.join(CURRENT_WORKING_DIR, './server/server.js') ],
 	target: "node",
 	output: {
 		path: path.join(CURRENT_WORKING_DIR, '/dist'),
 		filename: 'server.generated.js',
-		publicPath: '/dist/'
+		publicPath: '/dist/',
 		libraryTarget: "commonjs2"
 	},
 
-	external: [nodeExternals()],
-	module{
+	externals: [nodeExternals()],
+	module: {
 		rules: [
 			{
 				test: /\.jsx?$/,

@@ -12,7 +12,7 @@ const config = {
 		filename: 'bundle.js',
 		publicPath: '/dist/'
 	},
-	module{
+	module:{
 		rules: [
 			{
 				test: /\.jsx?$/,
